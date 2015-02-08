@@ -1,0 +1,56 @@
+.ScrollView {
+	background-color: lightsteelblue;
+	display: block;
+	padding: 10px;
+	font-family: sans-serif;
+}
+
+.LinearLayout {
+	background-color: green;
+	border: 2px solid black;
+	display: block;
+	margin-bottom: 10px;
+	
+}
+
+.InputFieldSelect {
+	border: 2px solid black;
+	display: none;
+	overflow: auto;
+	background-color: lightsteelblue;
+	height: 200px;
+	width: 80%;
+	margin: 5px;
+	padding: 5px;
+	border-radius: 10.0px 10.0px 10.0px 10.0px;
+
+}
+.Item {
+	border: 1px solid red;
+	background-color: lightsteelblue;
+	margin: 5px;
+	border-radius: 10.0px 10.0px 10.0px 10.0px;
+	padding: 5px;
+}
+.Item:hover {
+	background-color: white;
+}
+
+.TextView {
+    background-color: chartreuse;
+	color:red;
+	font-weight: bold;
+	display: block;
+}
+.InputField {
+	display: none;
+	margin: 10px;
+}
+
+CheckBox {
+	display: block;
+}
+
+MultiAutoCompleteTextView {
+	display: block;
+}

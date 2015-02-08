@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">vytky</string>
+    <string name="display_contact">Zobrazit Kontakty</string>
+    <string name="text_edit_id">edit%s</string>
+    <style name="CustomCheckBox">
+	<item name="android:textSize">19sp</item>
+	<item name="android:layout_marginLeft">5dp</item>
+	<item name="android:onClick">setEditTextVisibility</item>
+    <item name="android:paddingLeft">20dip</item>
+    <item name="android:paddingRight">2dip</item>
+    <item name="android:layout_margin">14dip</item>
+    <item name="android:layout_width">wrap_content</item>
+    <item name="android:layout_height">wrap_content</item>
+	<item name="android:button">@drawable/custom_checkbox_design</item>
+    </style>
+    <style name="CustomQuestionImage"> 
+	<item name="android:layout_width">12dp</item>
+	<item name="android:layout_height">17dp</item>
+    <item name="android:layout_marginTop">10dp</item>
+    <item name="android:id">@+id/imageView</item>
+    <item name="android:src">@drawable/question</item>
+    </style>
+  <style name="CustomEditText"> 
+    <item name="android:layout_width">fill_parent</item>
+    <item name="android:layout_height">wrap_content</item>
+	<item name="android:background">#FFD</item>
+    <item name="android:layout_marginLeft">5dp</item>
+	<item name="android:layout_marginRight">5dp</item>
+	<item name="android:textSize">16sp</item>
+	<item name="android:inputType">textMultiLine</item>
+	<item name="android:visibility">gone</item>
+	<item name="android:completionThreshold">1</item>
+	<item name="android:dropDownWidth">fill_parent</item>
+	<item name="android:dropDownHeight">300dp</item>
+	<item name="android:hint">Vyber</item>
+	<item name="android:paddingLeft">5dip</item>
+	<item name="android:minHeight">40dip</item> 
+    </style>
+    <style name="LayoutStyle">
+    <item name="android:layout_width">match_parent</item>
+	<item name="android:layout_height">wrap_content</item>
+	<item name="android:orientation">vertical</item>
+    </style>
+    <style name="LayoutTypeStyle">
+    <item name="android:layout_width">match_parent</item>
+	<item name="android:layout_height">wrap_content</item>
+	<item name="android:orientation">vertical</item>
+	<item name="android:layout_margin">12dip</item>
+	<item name="android:background">#111111</item>
+    </style>
+    <style name="Category">
+    <item name="android:layout_width">wrap_content</item>
+    <item name="android:layout_height">wrap_content</item>
+	<item name="android:textSize">20sp</item>
+	<item name="android:textColor">#FF0000</item>
+	<item name="android:padding">5dp</item>
+	<item name="android:layout_gravity">center_horizontal</item>
+    </style>
+     
+     <string-array name="editzastraseni">
+      <item >přiložení nože ke krku</item>
+      <item >silné bouchnutí do stolu</item>
+      <item >třísknutí dveřmi</item>
+      <item >míření pistolí</item>
+      <item >předvádění zbraní</item>
+      <item >zlé pohledy, vyhrůžná gesta</item>
+      <item >ubližování jiným v přítomnosti ohrožené osoby</item>
+      <item >drží nůž u ruky a říká: nemysli si, že to nejsem schopen udělat</item>
+      <item >drží mě u zdi a bouchá pěstmí vedle hlavy do zdi, aby mě zastrašil</item>
+      <item >říká: nikdy nevíš odkud kulka přiletí</item>
+      </string-array>
+      
+      <string-array name="editposlusnost">
+      <item >Nutí mě vařit večeři, když příjde pozdě v noci domů. třeba ve tři v noci</item>
+      <item >Když něco chci musím to dostat jinak ti to budu opakovat tak dlouho dokud mě to nekoupíš.</item>
+      </string-array>
+      
+      <string-array name="editvyhruzka">
+      <item >když odejdu, zabije mi psa</item>
+      <item >Vyhrozovani zbavení svéprávnosti</item>
+      <item >nucení k poslušnosti</item>
+      <item >vyhrožování přerušením kontaktů ( např. s dětmi )</item> 
+      <item >vyhrožování bitím</item> 
+      <item >vyhrožování sebevraždou</item> 
+      <item >vydírání přes děti</item>
+      <item >vyhrožování, že ji dostaně do blázince ( bohužel se skutečně stává, že oběť pak musí vyhledat psychiatrickou pomoc )</item> 
+      <item >Pokud najdeš odvahu se proti mně postavit spáchám sebevraždu, budu brečet, křičet a vydírat tě přes zvířata či děti.</item>
+      </string-array>
+      
+      <string-array name="editurazky">
+      <item >Ty krávo</item>
+      <item >Ty svině</item>
+      <item >Ho..o u cesty</item>
+      <item >Ty ku.vo</item>
+      <item >Urážky za údajné nevhodné oblečení, například: vypadáš jak ku.va. </item>
+      </string-array>
+      
+      <string-array name="editponizovani">
+      <item >říká: Ty snad ani nejsi člověk. Protože člověk myslí, má mozek a to Ty nemáš.</item>
+      <item >říká: Jsi svine špinavá, která nemá nárok na kyslík</item>
+      <item >Nadávky</item>
+      <item >Zesměšňování</item>
+      <item >Snižování schopností</item>
+      <item >zpochybňování duševního zdraví</item>
+      <item >zlehčování obav</item>
+      <item >přehlížení přání a potřeb</item>
+      <item >kritizování oblečení</item>
+      <item >kritizování kvality uvařeného jídla</item>
+      <item >Já mám vždy pravdu a ty jsi hloupá</item>
+      </string-array>
+      
+      <string-array name="editviny">
+      <item >Za všechno si můžeš sama protože mě provokuješ.</item>
+      <item >Všechno mi děláš naschvál.</item>
+      <item >Chceš mi ukrást dítě.</item>
+      <item >Děláš všechno abych nemohl spát. Máš z toho radost ?</item>
+      </string-array>
+      
+      <string-array name="editobvinovani">
+      <item>Nemáš ráda mojí dceru a snažíš se zničit mi můj krásný vztah s ní.</item>
+      <item>Všechno jsi měla promyšlené, máš dítě a teď mě chceš vydírat.( to chce právě on )</item>
+      <item>Já jsem na Tebe hodný a Ty na mě pořád tak zlá. Proč to děláš ? ( to dělá právě on )</item><item>Ukradla jsi mi čtyři roky života ( to udělal právě on )</item>
+      <item>Dělala jsi všechno možné abys otěhotněla.</item>
+      <item>Založila jsi rodinu na podvodu. (to udělal právě on )</item>
+      <item>Obvinění, že ho chce otrávit</item>
+      <item>Ty ubližuješ mě já tobě nikdy. I kdyby to byla tisíckrát pravda.</item>
+      </string-array>
+      
+      <string-array name="editkontrola">
+      <item >kontrola kam jde</item>
+      <item >kontrola s kým mluví</item>
+      <item >kontrola co říká</item>
+      <item >kontrola kdy se vrátí</item>
+      <item >omezování samostatnosti a rozhodování o sobě</item>
+      <item >Vše co děláš ty musím vědět do detailu.</item>
+      </string-array>
+      
+      <string-array name="editvycitky">
+      <item >Výčitka, že zavolala policii</item>
+      <item >Výčitka, že podala trestní oznámení</item>
+      <item >Výčitky, že požádala někoho o pomoc a tak způsobila údajnou ostudu</item>
+      </string-array>
+      
+     <string-array name="editlhani">
+     <item >Bezostyšně konstruuje minulost dle vlastní fantazie. A ve svůj prospěch.</item>
+     <item >Nechtěla jsem a nesoulasila se sexem, ale nedokázala jsem se bránit a pak prohlašoval, že já jsem ho svedla</item>
+     <item >Pokud mě řekneš že dělám chybu není to pravda. Já sem řekl že žádnou nedělám a tak ji prostě nedělám.</item>
+     <item>Ty ubližuješ mě já tobě nikdy. I kdyby to byla tisíckrát pravda.</item>
+     </string-array>
+      
+      <string-array name="editniceniveci">
+      <item >Roztrhal oblíbené knížky a zapaloval je přede mnou. Vědel, co pro mě znamenají, útočí na nejcitlivější místa.</item>
+      </string-array>
+      <string-array name="editsmichutrpeni">
+      <item >Nutil mě dívat se na video jeho kamaráda, jak dělá sex s dívkou, která asi byla pod drogama a dělat to evidentně nechtěla a viditelně trpěla. Řekla jsem to je strašný a on se jen smál.</item>
+      <item >donutil mě vzít si půjčku a teď ji splácím sama a on se tomu směje</item>
+      </string-array>
+      
+      
+      <string-array name="editfacky">
+      <item >Facky na tvář</item>
+      <item >Facky do míst, kde jsou vlasy ( zřejmě z důvody, aby nebyly vidět případné modřiny )</item>
+      <item >Facka z důvodu malého opožděného příchodu</item>
+      <item >Facka kvůli tomu, že se na ni podíval nějaký chlap</item>
+      </string-array>
+            <string-array name="editpesti">
+      <item >Rána pěstí do tváře</item>
+      <item >Rána pěstí do hrudníku</item>
+      <item >Rána pěstí za nezaviněný pozdní příchod z práce</item>
+      </string-array>
+            <string-array name="editkopance">
+      <item >Kopance do břicha</item>
+      <item >Kopance do nohou</item>
+      <item >Kopance do zad</item>
+      <item >Kopance do hlavy</item>
+      </string-array>
+            <string-array name="edittlucenihlavou">
+      <item >Tlučení hlavou o radiátor</item>
+      <item >Tlučení hlavou o tvrdou zem</item>
+      <item >Tlučení hlavou o stůl nebo jiný nábytek</item>
+      </string-array>
+            <string-array name="editvlasy">
+      <item >Tahání za vlasy a tažení po podlaze</item>
+      <item >Trhání vlasů</item>
+      <item >Tahání za vlasy za údajný usměv na jiné lidi</item>
+      </string-array>
+            <string-array name="editskrceni">
+      <item >Škrcení na zemi a zároveň klečení na ni</item>
+      <item >Škrcení u zdi a vytáhování do výšky</item>
+      <item >Škrcení tzv. kravatou</item>
+      <item >Škrcení a přitom vyhrožování, že danou oběť zabije nebo dostane do blázince</item>
+      </string-array>
+            <string-array name="editbitipredmetem">
+      <item >Bití páskem</item>
+      <item >Bití basebalovou pálkou</item>
+      <item >Bití železnou tyčí</item>
+      </string-array>
+      
+      <string-array name="editzabranovaninavstev">
+      <item >zákaz přijímat návštěvy</item>
+      <item >svým chováním odrazovat návštěvníka od dalších návštěv</item>
+      <item >když příjde kamarádka oběti, pachatel ji řekne, že ji nechce vidět nebo, že je unavená a podobně a tak odejde a přitom pravda může být opačná</item>
+      </string-array>
+      
+      <string-array name="editkontrolakomunikace">
+      <item >Kontrola SMS zpráv</item>
+      <item >Instalace tajných programů do mobilu, které kontrolují komunikaci</item>
+      <item >Instalace tajných programů do mobilu, které kontroluji polohu</item>
+      <item >Kontrola e-mailů nebo facebooku</item>
+      <item >Kontrola volání nebo zákaz telefonovat</item>
+      </string-array>
+      
+      <string-array name="editdoprovazeni">
+      <item >Doprovázení k lékaři</item>
+      <item >Doprovázení na úřady</item>
+      </string-array>
+      
+      <string-array name="editekonomickakontrola">
+      <item >Požadování předkládání účtenek za každý nákup, vše musí sedět do koruny</item>
+      <item >Zamezování přístupu k financím</item>
+      <item >Zamezování přístupu k financím dokonce přestože jsou to peníze její vlastní</item>
+      <item >Musí o peníze prosit</item>
+      <item >Pokud vydělám peníze já jsou moje. Pokud ty jsou naše.</item>
+      </string-array> 
+      
+      <string-array name="editsnahaomajetek">
+      <item >vynucování přepsání bytu, nemovitosti</item>
+      <item >snaha o zasílání peněz na jeho účet</item>
+      <item >bral mi celý důchod</item>
+      <item >donutil mě vzít si půjčku a teď ji splácím sama, a on se tomu směje</item>
+      </string-array>  
+        
+      <string-array name="editprace">
+      <item >zašle silně pomlouvačný anonym do práce, aby majitele nebo manžera odradil ji příjmout</item>
+      <item >zamkne ji třeba na jeden den doma a pak nejde do práce a tak o tu práci příjde</item>
+      </string-array>
+      
+      <string-array name="editfyzickaujma">
+      <item >zlomenina klíční kosti</item>
+      <item >zlomenina nosu</item>
+      <item >díra v lebce</item>
+      <item >modřiny na tváři</item>
+      <item >modřiny na těle</item>
+      <item >popáleniny</item>
+      <item >jizvy po tržných ranách</item>
+      <item >ukopnutá ledvina</item>
+      <item >otřes mozku, zvracení</item>
+      <item >potrat způsobený kopáním do břicha</item>
+      </string-array>
+      
+      <string-array name="editpsychika">
+      <item >stres</item>
+      <item >nesoustředěnost</item>
+      <item >nespavost</item>
+      <item >strach</item>
+      <item >pocit bezmoci</item>
+      <item >pocit ponížení, zneučtění</item>
+      <item >pocit bezpráví</item>
+      <item >ztráta sebevědomí</item>
+      <item >myšlenky na sebevraždu</item>
+      <item >pocit viny</item>
+      <item >deprese</item>
+      <item >sklony k alkoholu</item>
+      <item >třes rukou</item>
+      <item >sociální fóbie</item>
+      <item >chodila jsem jak duchem nepřítomná</item>
+	  <item >stydí se o tom s někým mluvit</item>
+      </string-array>
+      
+      
+      <string-array name="editvstricnost">
+      <item >Extrémní laskavost k útočníkovi</item>
+      <item >omlouvání jeho násilného jednání</item>
+      <item >braní zpět trestní oznámení</item>
+      <item >uvěření jeho slibům</item>
+      <item >popírání násilných skutků, že se nestaly</item>
+      <item >vymýšlení jiných důvodů pro různá zranění, například spadla ze schodů, uklouzla na podlaze atd.</item>
+      <item >snaha vycházet utočníkovi všemožně vstříc</item>
+      </string-array>
+      
+      <string-array name="editznakykoukolik">
+      <item >Nejsou schopni popsat pocity a emoce. </item>
+      <item >Mohou být schopni emoce mimořádně dobře předstírat.</item>
+      <item >Protože psychopatům chybí empatie, jsou odkázáni na svůj většinou velice dobrý pozorovací talent.</item>
+      <item >Celý život se psychopat učí předstírat emoce co nejvěrohodněji. </item>
+      <item >Tam, kde cítící člověk vnímá srdcem, co se děje, psychopat vnímá hlavou a rozumem.</item>
+      <item >psychopat vykazuje nepřítomnost výčitek svědomí. Trvale a nenapravitelně.  </item>
+      <item >Nerespektuje city lidí kolem sebe (nerespektuje ani jejich práva)</item>
+      <item >Psychopat není ochoten převzít odpovědnost za vlastní činy.</item>
+      <item >To, co dává životu lidský rozměr a smysl, nemá pro psychopaty žádnou váhu.</item>
+      <item >Likvidují důvěru člověka ve smysl života.</item>
+      <item >Pohrdají lidmi.</item>
+      <item >Neomlouvají se a nikdy nenapravují škody.</item>
+      <item >Pokud něco naprosto pokazili, nejprve se (uraženě) stáhnou a následně se pokusí z celé situace vylhat.</item>
+      <item >Tam, kde by zdravého člověka fackovala hanba, tam je psychopat povznesen, stále lehce nad věcí.</item>
+      <item >Bezostyšně konstruuje minulost dle vlastní fantazie. A ve svůj prospěch.</item>
+      <item >Podvádění projevující se opakovaným lhaním</item>
+      <item >Po odhaleném podvodu psychopati většinou vyčkávají a čekají, že se na událost pozapomene. Pak začnou znovu, jakoby se nic nestalo.</item>
+      <item >Bez ostychu se dopouštějí lží. Patologické lhaní ve vlastní prospěch.</item>
+      <item >Psychopat bude do "roztrhání těla" tvrdit evidentní lež.</item>
+      <item >Můžete psychopata zbavit moci, ale nemůžete psychopata zbavit jeho touhy po kontrole a moci. </item>
+      <item >Psychopat je z podstaty manipulátor.</item>
+      <item >Když jde psychopat za svým, maskuje to. </item>
+      <item >Tolik toho pro vás dělá, tolik vás miluje,.. a vy, "nevděčníci... jste tak neschopní, nevděční, nenávistní, slabí, chudí. Kde byste bez svého psychopata byli?</item>
+      </string-array>
+      
+      <string-array name="editisabelle">
+      <item >Je egocentrický</item>
+      <item >Přenáší zodpovědnost ze sebe na druhé</item>
+      <item >Navozuje u oběti pocit viny</item>
+      <item >Nesděluje jasně své požadavky, potřeby</item>
+      <item >Odpovídá většinou neurčitě</item>
+      <item >Mění své postoje podle situace a podle osoby, s níž právě komunikuje</item>
+      <item >Své potřeby zakrývá logickými důvody</item>
+      <item >Požaduje od druhých dokonalost, neměnnost názorů apod.</item>
+      <item >Zpochybňuje kvality druhých, nenápadně druhé kritizuje a soudí, hovoří o nich s despektem</item>
+      <item >Rád komunikuje nepřímo. Přes třetí osobu, telefonicky, písemně apod.</item>
+      <item >Zasívá nesvár, podněcuje podezíravost. Rozděluje, aby mohl lépe panovat</item>
+      <item >Často ze sebe dělá oběť, aby ho ostatní litovali</item>
+      <item >Nedbá na žádosti druhých, přičemž tvrdí pravý opak</item>
+      <item >Využívá morálních zásad druhých k naplnění vlastních potřeb</item>
+      <item >Citově či jinak vydírá nebo vyhrožuje. Skrytě nebo otevřeně</item>
+      <item >Často mění téma uprostřed hovoru</item>
+      <item >Vyhýbá se pracovním schůzkám a poradám</item>
+      <item >Zaměřuje se na neznalosti druhých a snaží se tak vyvolat dojem, že „má navrch“</item>
+      <item >Lže</item>
+      <item >Hlásá lež, aby se dozvěděl pravdu. Překrucuje a interpretuje výroky druhých</item>
+      <item >Závidí třeba i osobám velmi blízkým</item>
+      <item >Nesnáší kritiku. Dokáže popírat zcela zřejmá fakta</item>
+      <item >Nedbá na práva, potřeby a přání druhých</item>
+      <item >Často vydává pokyny a nutí druhé jednat na poslední chvíli</item>
+      <item >Jeho slovní projev zní logicky, avšak jeho postoje, činy nebo způsob života svědčí o pravém opaku</item>
+      <item >Dává dary - někdy i grandiózní, nedává však nezištně, něco za ně vždy očekává, a to i s úroky, jelikož  to jsou jen "počáteční investice" za cílem získat mnohem více, moci vydírat svou oběť  a vše jí vyčítat</item>
+      <item >V jeho přítomnosti se ostatní cítí nepříjemně a nesvobodně</item>
+      <item >Jde naprosto důsledně za svým cílem, ovšem na úkor druhých</item>
+      <item >Přiměje oběť k jednání, které by o vlastní vůli nejspíš nedopustila</item>
+      <item >Lidé, kteří ho znají, stále o něm hovoří, i když není přítomen.</item>
+      </string-array>
+      
+      <string-array name="editpcl">
+      <item >Nápadné kouzlo, výmluvnost a povrchní šarm </item>
+      <item >Grandiózní sebehodnocení </item>
+      <item >Patologické lhaní </item>
+      <item >Manipulativní a podvádějící</item>
+      <item >Nepřítomnost výčitek svědomí nebo pocitů viny </item>
+      <item >Povrchnost, mělkost (oploštěný afekt)</item>
+      <item >Necitlivý/nedostatek empatie </item>
+      <item >Neschopen přijímat odpovědnost za vlastní činy</item>
+      <item >Potřeba vzrušení a/nebo sklon k nudě</item>
+      <item >Parazitický životní styl</item>
+      <item >Špatná sebekontrola </item>
+      <item >Nedostatek realistických, dlouhodobých cílů</item>
+      <item >Impulsivita</item>
+      <item >Nezodpovědnost </item>
+      <item >Kriminalita v dětství či v průběhu dospívání</item>
+      <item >Problémové chování v dětství či v průběhu dospívání</item>
+      <item >Zrušení podmínečného propuštění</item>
+      <item >Promiskuitní sexuální chování</item>
+      <item >Mnoho krátkodobých manželských vztahů </item>
+      <item >Kriminální všestrannost (Univerzální kriminální chování) </item>
+      <item >Druhotně získané dovednosti sociopatického/sociologického podmiňování</item>
+      </string-array>
+      
+      <string-array name="editmacura">
+      <item >Jsou dokonalí herci, lepší než ti nejlepší herci z Holywoodu</item>
+      <item >Jsou dokonalí scénáristi, jsou schopni tvořit scénáře na dlouhou dobu dopředu. Proto je potřeba vystoupit z jejich hry.</item>
+      <item >Jsou schopni měnit role během jedné vteřiny a tak i jejich hněv je předstíraný, protože jsou schopni během jedné vteřiny ho vypnout a zase zapnout</item>
+      <item >Jejich hlavním cílem je svou oběť obelhat, podvést, okrást, zničit nebo i zabít</item>
+      <item >Mají radost z toho, že mohou druhému ublížit, ale dokáží dokonale předstírat pro okolí opak</item>
+      <item >Jsou to podvodníci, lháři, zloději a vrazi</item>
+      <item >Dokážou předstírat pláč i se slzami</item>
+      <item >Základem je nikdy jim nic nevěřit a vůbec se s nimi nebavit</item>
+      <item >Mistrně obrací lež v pravdu a pravdu v lež</item>
+      <item >Viní svou obět ze svým vlastních zlých záměrů</item>   
+      <item >Za své vlastní chyby či viny, obviňuje druhé</item>   
+      <item >ideální je o nich se ani nic nedozvědět co říkají, jejich sms mazat bez přečtení</item>
+      <item >Navenek tito lidé mohou působit sympaticky</item>
+      </string-array>
+      
+   
+
+</resources>
