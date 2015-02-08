@@ -41,8 +41,8 @@
     <html>
     <head>
      <link href="vytky.css" type="text/css" rel="stylesheet"/>
-     <script src="script/jquery.min.js"></script>
-     <script src="script/vytky.js"></script>
+     <script src="js/jquery.min.js"></script>
+     <script src="js/vytky.js"></script>
     </head>
      <body class="ScrollView">
       <xsl:apply-templates/>
