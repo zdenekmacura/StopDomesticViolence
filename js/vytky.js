@@ -1,5 +1,6 @@
 
 $(document).ready(function(){
+
     $("input[type=checkbox]").click(function(){
     $(this).next().next().toggle(300);
     if ($(this).is(':checked')) { $(this).next().next().next().show(300) ; } else {
@@ -17,6 +18,9 @@ $(document).ready(function(){
 		});
 		$('.Item').click(function() {
  			$("#generatedReproof").hide(300);
+			$("#headingReproof").hide(300);
+			$("#sendsms").hide();
+			$("#sharevytka").hide();
 			itemvalue = $(this).text();
 			var textarea = this.parentNode.previousElementSibling.firstElementChild;
 			$(textarea).text( $(textarea).text() + itemvalue + ", ");
@@ -39,7 +43,10 @@ $(document).ready(function(){
 	    });
 	    vytkatext += "\n\n" + "Výtku zpracoval(a): .....";
 		$("#generatedReproof").text(vytkatext);
+		$("#headingReproof").show(300);
 		$("#generatedReproof").show(300);
+		$("#sendsms").show();
+		$("#sharevytka").show();
 	});
 	$("#sendsms").click(function(){
 		vytkatext = $("#generatedReproof").text();
@@ -49,6 +56,6 @@ $(document).ready(function(){
 	$("#sharevytka").click(function(){
 		vytkatext = $("#generatedReproof").text();
 		phonenumber = $("#phonenumber").text();
-	window.plugins.socialsharing.share(vytkatext);
+		window.plugins.socialsharing.share(vytkatext);
 	});	
 });

@@ -6,7 +6,7 @@
    </head>
    <body class="ScrollView">
       <div class="LinearLayout">
-         <div class="TextView">Udělování výtek</div>
+         <div class="TextViewBigger">Udělování výtek</div>
          <div class="TextView">Výtky mohou mít charakter psychického, fyzického, ekonomického, emocionálního nebo sexuálního násilí nebo sociální izolace.</div>
          <div class="LinearLayout">
             <div class="TextView">Kategorie - Psychické násilí</div>
@@ -323,22 +323,13 @@
 <div id="selectedContact"></div>
 <input id="phonenumber" type="hidden"></input>
 <button id="generateReproof" class="Buttons"> Vygeneruj znění výtky</button>
-<div class="TextView">Znění oficiální výtky:</div>
+<div class="TextView" id="headingReproof">Znění oficiální výtky:<p class="TextViewSmaller">Prosím doplňte chybějící údaje, popřípadě poupravte podle vlastní situace</p></div>
 <textarea id="generatedReproof" class="Reproof" ></textarea>
 
 
      
         
- <!--       <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-            android:textSize="15sp"
-                android:text="Odešli výtku vytýkané osobě"
-            android:layout_margin="10dp"
-            android:onClick="sendSMSMessage"
-            android:padding="10dp"
-            android:visibility="gone"
-                android:id="@+id/buttonsendsms" />
+ <!--      
          <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -352,13 +343,12 @@
                 android:id="@+id/exitbutton"
                 android:text="Ukončit" />-->
                 
-<!--<button class="Buttons" id="sendsms" onclick="window.plugins.socialsharing.shareViaSMS('My cool message" + document. ₊ "', '0612345678', function(msg) {console.log('ok: ' + msg)}, function(msg) {alert('error: ' + msg)})">Zaslat výtku přes SMS</button><p>-->
 
-<button class="Buttons" id="sendsms">Zaslat výtku přes SMS</button><p>
+<p><button class="Buttons" id="sendsms">Zaslat výtku přes SMS</button><p>
 
 <button class="ButtonsSmaller" id="sharevytka" >zaslat výtku jiným způsobem</button>
 
-      <div class="TextView">Designed and developed by Zdeněk Macura ( zdenek.macura@email.cz )</div>
+      <div class="TextViewSmaller">Designed and developed by Zdeněk Macura ( zdenek.macura@email.cz )</div>
       </div>
       <script src="cordova.js"></script>
       <script src="js/jquery.min.js"></script>
