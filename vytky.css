@@ -1,16 +1,19 @@
 .ScrollView {
 	background-color: lightsteelblue;
 	display: block;
-	padding: 10px;
+	padding: 5px;
 	font-family: sans-serif;
+
 }
 
 .LinearLayout {
 	background-color: green;
 	border: 0px solid black;
 	display: block;
-	margin-bottom: 10px;
-	
+	margin: 3px;
+	padding: 3px;
+	border-radius: 10.0px 10.0px 10.0px 10.0px;
+
 }
 
 .InputFieldSelect {
@@ -19,7 +22,7 @@
 	overflow: auto;
 	background-color: lightsteelblue;
 	height: 200px;
-	width: 80%;
+	width: 90%;
 	margin: 5px;
 	padding: 5px;
 	border-radius: 10.0px 10.0px 10.0px 10.0px;
@@ -52,6 +55,8 @@
 	display: block;
 	padding: 10px;
 	margin: 10px;
+	border-radius: 10.0px 10.0px 10.0px 10.0px;
+	border: 1px solid red;
 
 }
 .InputField {
@@ -59,10 +64,10 @@
 	margin: 10px;
 }
 .InputText {
-	width: 80%;
+	width: 90%;
 	background-color: yellow;
 	font-size: 16px;
-	height: 4em;
+	height: 7em;
 	margin: 5px;
 	padding: 5px;
 	border-radius: 10.0px 10.0px 10.0px 10.0px;
