@@ -130,11 +130,15 @@
 	height: 30px;
 	margin: 7px;
 	font-size: 16px;
+	border-radius: 10.0px 10.0px 10.0px 10.0px;
+
 }
 .ButtonsSmaller {
 	height: 25px;
 	margin: 7px;
 	font-size: 14px;
+	border-radius: 10.0px 10.0px 10.0px 10.0px;
+
 }
 span {
 	font-size: 19px;
