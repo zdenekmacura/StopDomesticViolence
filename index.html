@@ -319,8 +319,9 @@
          </div>
 
 
-<button id="pickContact" class="Buttons"> Vyber vytýkanou osobu s adresáře</button>
+<button id="pickContact" class="Buttons"> Vyber vytýkanou osobu z adresáře</button>
 <div id="selectedContact"></div>
+<input id="phonenumber" type="hidden"></input>
 <button id="generateReproof" class="Buttons"> Vygeneruj znění výtky</button>
 <div class="TextView">Znění oficiální výtky:</div>
 <textarea id="generatedReproof" class="Reproof" ></textarea>
@@ -355,7 +356,7 @@
 
 <button class="Buttons" id="sendsms">Zaslat výtku přes SMS</button><p>
 
-<button class="ButtonsSmaller" onclick="window.plugins.socialsharing.share('Message only')">zaslat výtku jiným způsobem</button>
+<button class="ButtonsSmaller" id="sharevytka" >zaslat výtku jiným způsobem</button>
 
       <div class="TextView">Designed and developed by Zdeněk Macura ( zdenek.macura@email.cz )</div>
       </div>

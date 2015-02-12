@@ -43,6 +43,12 @@ $(document).ready(function(){
 	});
 	$("#sendsms").click(function(){
 		vytkatext = $("#generatedReproof").text();
-	window.plugins.socialsharing.shareViaSMS(vytkatext, '605484603', function(msg) {console.log('ok: ' + msg)}, function(msg) {alert('error: ' + msg)})
+		phonenumber = $("#phonenumber").text();
+	window.plugins.socialsharing.shareViaSMS(vytkatext, phonenumber, function(msg) {console.log('ok: ' + msg)}, function(msg) {alert('error: ' + msg)})
 	});
+	$("#sharevytka").click(function(){
+		vytkatext = $("#generatedReproof").text();
+		phonenumber = $("#phonenumber").text();
+	window.plugins.socialsharing.share(vytkatext);
+	});	
 });

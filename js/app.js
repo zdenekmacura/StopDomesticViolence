@@ -13,6 +13,7 @@ function doContactPicker() {
 		if(contact.phoneNumbers && contact.phoneNumbers.length) {
 			s+= ", Phone: "+contact.phoneNumbers[0].value+"<br/>";
 		}
+		document.querySelector("#phonenumber").innerHTML=contact.phoneNumbers[0].value;
 		document.querySelector("#selectedContact").innerHTML=s;
 	},function(err){
 		console.log('Error: ' + err);
