@@ -351,9 +351,11 @@
                 android:id="@+id/exitbutton"
                 android:text="Ukončit" />-->
                 
-<button onclick="window.plugins.socialsharing.shareViaSMS('My cool message', '0612345678', function(msg) {console.log('ok: ' + msg)}, function(msg) {alert('error: ' + msg)})">share via SMS</button>
+<!--<button class="Buttons" id="sendsms" onclick="window.plugins.socialsharing.shareViaSMS('My cool message" + document. ₊ "', '0612345678', function(msg) {console.log('ok: ' + msg)}, function(msg) {alert('error: ' + msg)})">Zaslat výtku přes SMS</button><p>-->
 
-<button onclick="window.plugins.socialsharing.share('Message only')">message only</button>
+<button class="Buttons" id="sendsms">Zaslat výtku přes SMS</button><p>
+
+<button class="ButtonsSmaller" onclick="window.plugins.socialsharing.share('Message only')">zaslat výtku jiným způsobem</button>
 
       <div class="TextView">Designed and developed by Zdeněk Macura ( zdenek.macura@email.cz )</div>
       </div>

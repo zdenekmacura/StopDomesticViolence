@@ -41,4 +41,8 @@ $(document).ready(function(){
 		$("#generatedReproof").text(vytkatext);
 		$("#generatedReproof").show(300);
 	});
+	$("#sendsms").click(function(){
+		vytkatext = $("#generatedReproof").text();
+	window.plugins.socialsharing.shareViaSMS(vytkatext, '605484603', function(msg) {console.log('ok: ' + msg)}, function(msg) {alert('error: ' + msg)})
+	});
 });
