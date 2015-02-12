@@ -6,7 +6,6 @@ $(document).ready(function(){
     	$(this).next().next().next().hide(300) ; $(this).next().next().next().next().hide(300) ;
     }
 	});
-
 	$.get("strings.xml",{},function(xml) {
 		$('string-array',xml).each(function(i) {
 			var namefield = $(this).attr("name");
@@ -17,6 +16,7 @@ $(document).ready(function(){
 			});
 		});
 		$('.Item').click(function() {
+ 			$("#generatedReproof").hide(300);
 			itemvalue = $(this).text();
 			var textarea = this.parentNode.previousElementSibling.firstElementChild;
 			$(textarea).text( $(textarea).text() + itemvalue + ", ");
@@ -27,5 +27,18 @@ $(document).ready(function(){
     			$(this).prev().show(300);
 			});
 		});
+	});
+	
+	$("#generateReproof").click(function(){
+		var vytkatext = "UDĚLENÍ OFICIÁLNÍ VÝTKY \nPane(í) ..... , uděluji vám tímto oficiální výtku za následující jednání ze dne ......, páchané na ......   ";
+		$("input[type=checkbox]:checked:enabled").each(function(i) {
+			var text = $(this).next().next().text();
+			vytkatext += "\n\n" + $(this).parent().parent().children(":first").text();
+		    vytkatext += " - " + $(this).next().text();
+		    vytkatext += " - Specifikace: " + text.trim();
+	    });
+	    vytkatext += "\n\n" + "Výtku zpracoval(a): .....";
+		$("#generatedReproof").text(vytkatext);
+		$("#generatedReproof").show(300);
 	});
 });

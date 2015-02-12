@@ -7,7 +7,7 @@
 
 .LinearLayout {
 	background-color: green;
-	border: 2px solid black;
+	border: 0px solid black;
 	display: block;
 	margin-bottom: 10px;
 	
@@ -50,6 +50,8 @@
 	color:red;
 	font-weight: bold;
 	display: block;
+	padding: 10px;
+	margin: 10px;
 
 }
 .InputField {
@@ -66,9 +68,26 @@
 	border-radius: 10.0px 10.0px 10.0px 10.0px;
 	border: 2px solid black;
 }
-.Buttons {
-	height: 30px;
+
+.Reproof {
+	width: 80%;
+	background-color: white;
+	font-size: 15px;
+	height: 15em;
 	margin: 5px;
-	font-size: 16px;
+	padding: 5px;
+	border-radius: 10.0px 10.0px 10.0px 10.0px;
+	border: 2px solid black;
+	display: none;
 }
 
+.Buttons {
+	height: 30px;
+	margin: 7px;
+	font-size: 16px;
+}
+span {
+	font-size: 17px;
+	margin: 5px;
+	padding: 5px;
+}

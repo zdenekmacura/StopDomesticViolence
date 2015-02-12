@@ -2,6 +2,7 @@ document.addEventListener("deviceready", init, false);
 
 function init() {	
 	document.querySelector("#pickContact").addEventListener("touchend", doContactPicker, false);
+	
 }
 
 function doContactPicker() {
@@ -17,6 +18,7 @@ function doContactPicker() {
 		console.log('Error: ' + err);
 	});
 }
+
 
 /*
 Handles iOS not returning displayName or returning null/""
