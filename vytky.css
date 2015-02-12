@@ -1,7 +1,7 @@
 .ScrollView {
 	background-color: lightsteelblue;
 	display: block;
-	padding: 5px;
+	padding: 2px;
 	font-family: sans-serif;
 
 }
@@ -10,8 +10,8 @@
 	background-color: green;
 	border: 0px solid black;
 	display: block;
-	margin: 3px;
-	padding: 3px;
+	margin: 2px;
+	padding: 2px;
 	border-radius: 10.0px 10.0px 10.0px 10.0px;
 
 }
@@ -21,10 +21,10 @@
 	display: none;
 	overflow: auto;
 	background-color: lightsteelblue;
-	height: 220px;
-	width: 100%;
-	margin: 5px;
-	padding: 5px;
+	height: 200px;
+	width: 90%;
+	margin: 3px;
+	padding: 3px;
 	border-radius: 10.0px 10.0px 10.0px 10.0px;
 
 }
