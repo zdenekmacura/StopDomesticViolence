@@ -96,7 +96,7 @@
 	margin: 5px;
 	padding: 5px;
 	border-radius: 10.0px 10.0px 10.0px 10.0px;
-	border: 2px solid black;
+	border: 2px solid red;
 }
 #headingReproof {
 	display: none;
@@ -115,14 +115,14 @@
 }
 
 .Reproof {
-	width: 80%;
+	width: 90%;
 	background-color: white;
-	font-size: 15px;
-	height: 15em;
+	font-size: 20px;
+	height: 20em;
 	margin: 5px;
 	padding: 5px;
 	border-radius: 10.0px 10.0px 10.0px 10.0px;
-	border: 2px solid black;
+	border: 2px solid red;
 	display: none;
 }
 

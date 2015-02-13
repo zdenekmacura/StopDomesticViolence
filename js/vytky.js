@@ -23,7 +23,8 @@ $(document).ready(function(){
 			$("#sharevytka").hide();
 			itemvalue = $(this).text();
 			var textarea = this.parentNode.previousElementSibling.firstElementChild;
-			$(textarea).text( $(textarea).text() + itemvalue + ", ");
+			if ($(textarea).val().length > 0 ) { del = ", ";} else { del = "";}
+			$(textarea).val($(textarea).val() + del + itemvalue + " ");
 			$(this).parent().hide(200);
 			$(this).parent().next().show(300);
 			$('.ShowExamples').click(function(){
@@ -36,20 +37,20 @@ $(document).ready(function(){
 	$("#generateReproof").click(function(){
 		var vytkatext = "UDĚLENÍ OFICIÁLNÍ VÝTKY \nPane(í) ..... , uděluji vám tímto oficiální výtku za následující jednání ze dne ......, páchané na ......   ";
 		$("input[type=checkbox]:checked:enabled").each(function(i) {
-			var text = $(this).next().next().text();
+			var text = $(this).next().next().children(":first").val();
 			vytkatext += "\n\n" + $(this).parent().parent().children(":first").text();
 		    vytkatext += " - " + $(this).next().text();
 		    vytkatext += " - Specifikace: " + text.trim();
 	    });
 	    vytkatext += "\n\n" + "Výtku zpracoval(a): .....";
-		$("#generatedReproof").text(vytkatext);
+		$("#generatedReproof").val(vytkatext);
 		$("#headingReproof").show(300);
 		$("#generatedReproof").show(300);
 		$("#sendsms").show();
 		$("#sharevytka").show();
 	});
 	$("#sendsms").click(function(){
-		vytkatext = $("#generatedReproof").text();
+		vytkatext = $("#generatedReproof").val();
 		phonenumber = $("#phonenumber").text();
 	window.plugins.socialsharing.shareViaSMS(vytkatext, phonenumber, function(msg) {console.log('ok: ' + msg)}, function(msg) {alert('error: ' + msg)})
 	});
@@ -57,5 +58,5 @@ $(document).ready(function(){
 		vytkatext = $("#generatedReproof").text();
 		phonenumber = $("#phonenumber").text();
 		window.plugins.socialsharing.share(vytkatext);
-	});	
+	});
 });
