@@ -86,6 +86,20 @@
       <item >vyhrožování, že ji dostaně do blázince ( bohužel se skutečně stává, že oběť pak musí vyhledat psychiatrickou pomoc )</item> 
       <item >Pokud najdeš odvahu se proti mně postavit spáchám sebevraždu, budu brečet, křičet a vydírat tě přes zvířata či děti.</item>
       </string-array>
+
+      <string-array name="editpomlouvani">
+      <item >Pomlouvání bývalého partnera ( často opak bývá pravdou )</item>
+      <item >Pomlouvání kamarádek, známých</item>
+      <item >Pomlouvání rodinných příslušníků a cílem narušit důvěru a dosáhnout skrytě sociální izolace</item> 
+      </string-array>
+
+      <string-array name="editpodezirani">
+      <item >Podezírání z nečestných úmyslů ( ve skutečsnoti nečestné úmysly má agresor)</item>
+      <item >Podezírání z nevěry</item>
+      <item >Podezírání ze zlých záměrů ( ve skutečnosti zlé záměry má agresor a podezíráním své oběti, prozrazuje své vlastní nečestné a zlé záměry ) </item> 
+      </string-array>
+
+
       
       <string-array name="editurazky">
       <item >Ty krávo</item>
